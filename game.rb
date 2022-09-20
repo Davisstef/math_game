@@ -1,4 +1,3 @@
-
 class Game 
   SCORE = 3
   @@current_turn = 1
