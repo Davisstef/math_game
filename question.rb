@@ -1,13 +1,16 @@
-class Question 
+class Question
+  attr_accessor :answer
+  
+    def initialize
+      @answer
+    end
+    
+    def question
+      random1 = rand(1..20)
+      random2 = rand(1..20)
+      self.answer = random1 + random2 
+      "What does #{random1} plus #{random2} equal?"
+    end
 
-  attr_reader :number1, :number2
-  def initialize
-  @number1 = rand(21)
-  @number2 = rand(21)
-  end
-
-  def qs
-  "What does #{number1} plus #{number2} equals?"
-  end
-
+    
 end
